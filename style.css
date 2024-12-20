@@ -215,3 +215,195 @@ display: block;
    
 }
 
+/*RESPONSIVIDADE*/
+
+
+@media(max-width: 450px){
+    .headerOfMain{
+        height: 100px;
+        text-align: start;
+        margin-left: 35px;
+        
+    }
+    .headerOfMain p{
+        font-size: 18px;
+        font-family: 'Inter';
+        font-weight: Bold;
+        
+    }
+    header{
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        align-items: center;
+        height: 40px;
+        margin: 20px auto 60px;
+        width: 155px;
+    }
+    header p,img{
+        font-size: 24px;
+        line-height: 30px;
+        font-family: 'Inter';
+        color: var(--content-secondary);
+        font-weight: Bold;
+    }
+    
+    main a {
+        color: var(--button-color);
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: Medium;
+       }
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 500px;
+        width: 400px;
+        margin-left: -10px;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+    }
+    form input{
+        width: 220px;
+        height: 40px;
+        border-radius: 8px;
+        border: 3px solid var(--border-primary);
+        padding: 10px 10px 10px 20px;
+        color: var(--content-tertiary);
+        margin-right: 5px;
+        font-size: 14px;
+        font-weight:200;
+       background-color: var(--bg-secondary);
+        
+    }
+    form input:hover{
+        width: 220px;
+        height: 40px;
+        border-radius: 8px;
+        border: 3px solid var(--border-hover);
+        padding: 10px 10px 10px 20px;
+        color: var(--content-tertiary);
+        margin-right: 5px;
+        font-size: 14px;
+        font-weight:200;
+       background-color: var(--background-primary);
+        
+    }
+    form input:focus{
+        width: 220px;
+        height: 40px;
+        border-radius: 8px;
+        padding: 10px 10px 10px 20px;
+        color: var(--content-primary);
+        margin-right: 5px;
+        font-size: 14px;
+        font-weight:200;
+        outline: none;
+        background-color: var(--bg-secondary);
+       border:3px solid var(--button-color);
+        
+    }
+    button{
+        width:100px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 12px;
+        background-color: var(--button-color);
+        border:none;
+        color: white;
+        font-size:12px;
+        font-weight: Semibold;
+    }
+    
+    
+    .show-result{
+    display: block;
+    }
+    
+    
+      ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 30px;
+        width: 320px;
+       
+    }
+      
+      li{
+        display: flex;
+        background-color: var(--bg-secondary);
+        height: 50px;
+        padding: 5px;
+        justify-items: center;
+        align-items: center;
+        list-style: none;
+        gap: 10px;
+        border-radius: 8px;
+        font-weight:Medium ;
+        font-family: 'Inter';
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+     
+      .inputCheck {
+        margin-left: 10px;
+        width: 20px;
+        border:1px solid var(--border-hover);
+        border-radius: 8px;
+        appearance: none;
+        height: 20px;
+      }
+      .inputCheck:checked::after{
+        display: flex;
+        justify-content: center;
+        content: '✓';
+        background-color: var(--button-color);
+        color: white;
+        border-radius: 8px;
+        height: 20px;
+      }
+      .lixeiraStyle{
+        margin-left: 280px;
+        height: 22px;
+        position:absolute;
+    
+      }
+    
+    
+    .footer{
+        height: 50px;
+        width: 320px;
+        background-color: var(--alert-color);
+        border: 1px solid red;
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 12px;
+        align-items: center;
+        margin-top: 30px;
+        margin:auto;
+    }
+    
+    .alertText{
+        font-family: 'Inter';
+        margin-left: 30px;
+        position: fixed;
+        font-weight: Medium;
+        color: var(--background-primary);
+    }
+    .iconX{
+        margin-left: 280px;
+        height: 20px;
+        position: fixed;
+    }
+    .alertIcon{
+        position: fixed;
+        height: 20px;
+       
+    }
+}
